@@ -101,10 +101,5 @@ Detailed documentation can be found in the `docs/` directory:
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📄 License
 
-This project is licensed under the MIT License.
-
----
-
-Built with ❤️ by [Your Name/EDGEMAKERS Team]
+Built with ❤️ by Harshal Ahire
