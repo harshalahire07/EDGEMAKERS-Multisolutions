@@ -1,0 +1,344 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Natural palette C: mint + beige + charcoal */
+    --background: 50 80% 95%; /* #FAF3DD - cream/beige background */
+    --foreground: 0 0% 20%; /* #333333 - charcoal gray */
+    --card: 50 80% 98%; /* #FCF8F0 - light cream */
+    --card-foreground: 0 0% 20%;
+    --popover: 0 0% 100%; /* #FFFFFF */
+    --popover-foreground: 0 0% 20%;
+    --primary: 140 70% 45%; /* #16A34A - Vibrant Green (brand) */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 150 70% 85%; /* #A8F0D4 - light mint */
+    --secondary-foreground: 220 10% 40%; /* #6B7280 - medium gray */
+    --muted: 50 80% 92%; /* #F7F2E7 - soft beige */
+    --muted-foreground: 220 10% 55%; /* #9CA3AF - soft gray */
+    --accent: 150 70% 70%; /* #7DE0B3 - deeper mint accent */
+    --accent-foreground: 0 0% 20%; /* charcoal on accent */
+    --destructive: 0 72% 51%; /* #E53E3E */
+    --destructive-foreground: 0 0% 100%;
+    --border: 50 80% 88%; /* #F2EBD8 - light beige border */
+    --input: 50 80% 88%;
+    --ring: 150 70% 70%; /* mint for focus */
+    --radius: 0.5rem;
+    --chart-1: 140 70% 45%; /* green */
+    --chart-2: 150 70% 70%; /* mint */
+    --chart-3: 50 80% 92%; /* beige */
+    --chart-4: 0 0% 20%; /* charcoal */
+    --chart-5: 45 95% 60%; /* soft yellow */
+  }
+
+  .dark {
+    /* Mirror natural palette for future dark-mode support */
+    --background: 50 80% 95%;
+    --foreground: 0 0% 20%;
+    --card: 50 80% 98%;
+    --card-foreground: 0 0% 20%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 20%;
+    --primary: 140 70% 45%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 150 70% 85%;
+    --secondary-foreground: 220 10% 40%;
+    --muted: 50 80% 92%;
+    --muted-foreground: 220 10% 55%;
+    --accent: 150 70% 70%;
+    --accent-foreground: 0 0% 20%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 50 80% 88%;
+    --input: 50 80% 88%;
+    --ring: 150 70% 70%;
+    --chart-1: 140 70% 45%;
+    --chart-2: 150 70% 70%;
+    --chart-3: 50 80% 92%;
+    --chart-4: 0 0% 20%;
+    --chart-5: 45 95% 60%;
+  }
+}
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    overflow-x: hidden;
+  }
+
+  /* Ensure proper responsive behavior */
+  html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+  /* Container max-widths for different screens */
+  .container {
+    @apply mx-auto;
+    max-width: 100%;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      max-width: 640px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 1024px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .container {
+      max-width: 1280px;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .container {
+      max-width: 1536px;
+    }
+  }
+
+  /* 4K optimization */
+  @media (min-width: 2560px) {
+    .container {
+      max-width: 2000px;
+    }
+  }
+}
+
+/* Print Styles - Global Resets */
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+
+  @page {
+    margin: 1cm;
+  }
+
+  /* Print Styles - Hide UI Elements */
+  header,
+  footer,
+  nav {
+    display: none !important;
+  }
+
+  button:not(.print-visible),
+  .no-print {
+    display: none !important;
+  }
+
+  input,
+  select,
+  textarea,
+  .filter-panel {
+    display: none !important;
+  }
+
+  .admin-actions,
+  .export-buttons {
+    display: none !important;
+  }
+
+  .whatsapp-button {
+    display: none !important;
+  }
+
+  .tabs-list,
+  [role="tablist"] {
+    display: none !important;
+  }
+
+  .skeleton {
+    display: none !important;
+  }
+
+  /* Print Styles - Content Optimization */
+  .container {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .main-content {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .card {
+    border: 1px solid #ddd !important;
+    page-break-inside: avoid;
+    margin-bottom: 1rem;
+  }
+
+  /* Print Styles - Job Card Isolation (Comment 9) */
+  body.printing-job .job-card {
+    display: none !important;
+  }
+
+  body.printing-job .job-card:not(.no-print) {
+    display: block !important;
+  }
+
+  /* Print Styles - Global content resets (applied after specific rules to avoid override) */
+  * {
+    background: white !important;
+    color: black !important;
+    box-shadow: none !important;
+  }
+
+  p,
+  span,
+  div {
+    color: black !important;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: black !important;
+    font-weight: bold !important;
+  }
+
+  /* Print Styles - Table Printing (after global resets to preserve intentional backgrounds) */
+  table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+  }
+
+  th,
+  td {
+    border: 1px solid #ddd !important;
+    padding: 8px !important;
+  }
+
+  th {
+    background: #f5f5f5 !important;
+    font-weight: bold !important;
+  }
+
+  tr {
+    page-break-inside: avoid;
+  }
+
+  /* Print Styles - Job Listing Print Styles */
+  .job-card {
+    page-break-inside: avoid;
+    margin-bottom: 2rem;
+  }
+
+  .job-title {
+    font-size: 18pt !important;
+    font-weight: bold !important;
+  }
+
+  /* Print Styles - Icon Hiding (Comment 5: narrow to lucide only) */
+  .lucide {
+    display: none !important;
+  }
+
+  .print-label {
+    display: inline !important;
+  }
+
+  /* Print Styles - Admin Record Print Styles */
+  .print-record {
+    padding: 2rem;
+  }
+
+  .record-field {
+    margin-bottom: 1rem;
+  }
+
+  .record-label {
+    font-weight: bold;
+  }
+
+  .record-value {
+    margin-left: 1rem;
+  }
+
+  .print-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid black;
+    padding-bottom: 1rem;
+  }
+
+  /* Print Styles - Page Break Controls */
+  .page-break-before {
+    page-break-before: always;
+  }
+
+  .page-break-after {
+    page-break-after: always;
+  }
+
+  .page-break-avoid {
+    page-break-inside: avoid;
+  }
+
+  /* Print Styles - Print-Specific Visibility */
+  .print-only {
+    display: block !important;
+  }
+
+  /* Print Styles - Link Handling */
+  a {
+    text-decoration: none !important;
+    color: black !important;
+  }
+
+  /* Print Styles - Responsive Print Layout */
+  .grid {
+    gap: 0.5rem !important;
+  }
+
+  /* Print Styles - Contact and Application Tables */
+  .contact-table,
+  .application-table {
+    page-break-inside: auto;
+  }
+
+  .contact-table tr,
+  .application-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+
+  /* Print Styles - Job Details Section */
+  .job-details {
+    margin-top: 1rem;
+  }
+
+  .job-details p {
+    margin: 0.5rem 0;
+  }
+}
+
+/* Screen-only styles for print utilities */
+.print-only {
+  display: none;
+}
+
+.print-label {
+  display: none;
+}

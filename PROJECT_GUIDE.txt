@@ -1,0 +1,95 @@
+PROJECT: EDGEMAKERS Multisolutions
+=================================
+
+DESCRIPTION
+-----------
+EDGEMAKERS Multisolutions is a modern, responsive web application designed for a facility management company. It showcases services, team members, testimonials, and career opportunities. The application includes a comprehensive Admin Dashboard for managing content, users, and inquiries.
+
+TECHNOLOGY STACK
+----------------
+- Framework: Next.js 15 (App Router)
+- Language: TypeScript
+- Styling: Tailwind CSS
+- UI Components: Shadcn UI, Lucide React
+- State Management: React Context (AuthContext)
+- Data Persistence: LocalStorage (simulated database)
+- Icons: Lucide React
+
+PROJECT STRUCTURE
+-----------------
+c:/Users/hda00/Downloads/EDGEMAKERS Multisolutions/studio-main/
+├── src/
+│   ├── app/                # Application pages and routing
+│   │   ├── page.tsx        # Home page
+│   │   ├── about/          # About page
+│   │   ├── careers/        # Careers page
+│   │   ├── admin/          # Admin Dashboard (protected)
+│   │   └── layout.tsx      # Main layout (Header, Footer)
+│   ├── components/         # Reusable UI components
+│   │   ├── landing/        # Components for public pages (Header, Hero, etc.)
+│   │   ├── admin/          # Components for Admin Dashboard
+│   │   ├── auth/           # Authentication components (Login, etc.)
+│   │   └── ui/             # Shadcn UI primitives
+│   ├── lib/                # Utility functions and data types
+│   │   ├── data.ts         # Static data and type definitions
+│   │   ├── database.ts     # LocalStorage database wrapper
+│   │   └── user-database.ts# User management logic
+│   └── contexts/           # React Contexts (Auth)
+├── public/                 # Static assets
+└── docs/                   # Technical documentation
+
+HOW TO RUN (INSTRUCTIONS FOR THE RECIPIENT)
+-------------------------------------------
+If you have received this project as a ZIP file, follow these steps:
+
+1. **Install Node.js**:
+   - Download and install "Node.js (LTS version)" from: https://nodejs.org/
+   - This is required to run the website.
+
+2. **Unzip the Project**:
+   - Extract the ZIP file to a folder on your computer (e.g., on your Desktop).
+
+3. **Open Terminal**:
+   - Open the extracted folder.
+   - Right-click anywhere in the empty space of the folder and select "Open in Terminal" (or "Open PowerShell" / "Git Bash").
+   - Alternatively, open Command Prompt and `cd` into the folder.
+
+4. **Install Dependencies**:
+   - Type the following command and press Enter:
+     npm install
+   - Wait for it to finish (this downloads the necessary libraries).
+
+5. **Start the Website**:
+   - Type the following command and press Enter:
+     npm run dev
+   - You should see a message saying "Ready in ...".
+
+6. **View the Website**:
+   - Open your web browser (Chrome, Edge, etc.).
+   - Go to: http://localhost:9002
+
+Note: Do not close the terminal window while you want the website to keep running.
+
+ADMIN ACCESS
+------------
+To access the Admin Dashboard:
+1. Click the "Login" button in the top navigation bar.
+2. Enter the default admin credentials:
+   - Email: admin@edgemakers.com
+   - Password: Admin@123
+3. Once logged in, click your name in the top right corner.
+4. Select "Admin Dashboard" from the dropdown menu.
+
+FEATURES
+--------
+- Responsive Design: Works on desktop, tablet, and mobile.
+- Dynamic Content: Services, Team, and Testimonials are managed via the Admin Dashboard.
+- Authentication: Secure login system with role-based access (Admin/User).
+- Contact Forms: Integrated forms for inquiries and job applications.
+- Dark/Light Mode: (If implemented in globals.css/theme provider).
+
+TROUBLESHOOTING
+---------------
+- If the server fails to start, ensure port 9002 is free or check the terminal output for errors.
+- If changes don't appear, try refreshing the page or restarting the server.
+- If you forget the admin password, you can clear your browser's LocalStorage to reset the database to defaults.

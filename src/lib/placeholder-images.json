@@ -1,0 +1,82 @@
+{
+  "placeholderImages": [
+    {
+      "id": "service-house-keeping",
+      "description": "A clean and tidy living room.",
+      "imageUrl": "https://images.unsplash.com/photo-1580237072617-771c3ecc4a24?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjbGVhbiUyMGhvdXNlfGVufDB8fHx8MTc2MjQ5MzA3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "clean house"
+    },
+    {
+      "id": "service-cash-run",
+      "description": "An armored truck for cash transport.",
+      "imageUrl": "https://images.unsplash.com/photo-1761070822445-2803cadc4e9a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhcm1vcmVkJTIwdHJ1Y2t8ZW58MHx8fHwxNzYyNDkzMDcyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "armored truck"
+    },
+    {
+      "id": "service-epoxy-flooring",
+      "description": "A shiny and modern epoxy floor.",
+      "imageUrl": "https://images.unsplash.com/photo-1523251836828-b75d28b89804?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxlcG94eSUyMGZsb29yfGVufDB8fHx8MTc2MjQ5MzA3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "epoxy floor"
+    },
+    {
+      "id": "service-canteen",
+      "description": "A modern and clean canteen area.",
+      "imageUrl": "https://images.unsplash.com/photo-1603376728541-6e1906a300e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjYW50ZWVuJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzYyNDkzMDcyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "canteen interior"
+    },
+    {
+      "id": "service-landscaping",
+      "description": "A beautifully landscaped garden.",
+      "imageUrl": "https://images.unsplash.com/photo-1666228459069-d308cbea796b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxnYXJkZW4lMjBsYW5kc2NhcGV8ZW58MHx8fHwxNzYyNDkzMDcyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "garden landscape"
+    },
+    {
+      "id": "service-tech-support",
+      "description": "A technician helping a customer with a computer.",
+      "imageUrl": "https://images.unsplash.com/photo-1525182008055-f88b95ff7980?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx0ZWNobmljYWwlMjBzdXBwb3J0fGVufDB8fHx8MTc2MjQ5MzA3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "technical support"
+    },
+    {
+      "id": "service-pest-control",
+      "description": "A pest control professional at work.",
+      "imageUrl": "https://images.unsplash.com/photo-1581578405048-b6f813432ca4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGVzdCUyMGNvbnRyb2x8ZW58MHx8fHwxNzYyNDY1MTY3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pest control"
+    },
+    {
+      "id": "service-valet-parking",
+      "description": "A valet parking attendant holding car keys.",
+      "imageUrl": "https://images.unsplash.com/photo-1747620884426-6d79a9e7fc2b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx2YWxldCUyMGtleXxlbnwwfHx8fDE3NjI0OTMwNzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "valet key"
+    },
+    {
+      "id": "service-parking-attendant",
+      "description": "A parking attendant in a parking lot.",
+      "imageUrl": "https://images.unsplash.com/photo-1582620834096-2136cc430e7a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwYXJraW5nJTIwYXR0ZW5kYW50fGVufDB8fHx8MTc2MjQ5MzA3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "parking attendant"
+    },
+    {
+      "id": "service-bms-operator",
+      "description": "An operator monitoring a building management system.",
+      "imageUrl": "https://images.unsplash.com/photo-1518228684816-9135c15ab4ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y29udHJvbCUyMHBhbmVsfGVufDB8fHx8MTc2MjQ2MDc4NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "control panel"
+    },
+    {
+      "id": "team-jane-doe",
+      "description": "Portrait of Jane Doe.",
+      "imageUrl": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MjQ1ODcyOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "team-john-smith",
+      "description": "Portrait of John Smith.",
+      "imageUrl": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjI0MTg2MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "team-emily-white",
+      "description": "Portrait of Emily White.",
+      "imageUrl": "https://images.unsplash.com/photo-1542596768-5d1d21f1cf98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwZXJzb24lMjBzbWlsaW5nfGVufDB8fHx8MTc2MjQwNTcyNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person smiling"
+    }
+  ]
+}
